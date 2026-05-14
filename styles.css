@@ -724,7 +724,7 @@ address { font-style: normal; }
 }
 @media (max-width: 960px) {
     .order-layout { grid-template-columns: 1fr; }
-    .order-aside  { order: -1; position: static; }
+    .order-aside  { order: -1; }
 }
 
 /* Formulario */
@@ -903,8 +903,13 @@ address { font-style: normal; }
     border-radius: var(--r-l);
     overflow: hidden;
     box-shadow: var(--shadow-m);
-    position: sticky;
-    top: calc(var(--nav-h) + 1rem);
+}
+/* sticky solo en pantallas grandes donde el layout tiene 2 columnas */
+@media (min-width: 961px) {
+    .order-aside {
+        position: sticky;
+        top: calc(var(--nav-h) + 1rem);
+    }
 }
 .order-aside::before {
     content: '';
