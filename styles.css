@@ -612,13 +612,8 @@ address { font-style: normal; }
     position: relative;
     overflow: hidden;
 }
-.card-image::after {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 40px;
-    background: linear-gradient(to top, rgba(255,255,255,.8), transparent);
-}
+/* el emoji es texto directamente en .card-image, sin wrapper para z-index;
+   el gradient decorativo se omite para no tapar el icono */
 
 .card-body {
     padding: 1.1rem 1.3rem;
