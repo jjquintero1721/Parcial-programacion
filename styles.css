@@ -724,7 +724,7 @@ address { font-style: normal; }
 }
 @media (max-width: 960px) {
     .order-layout { grid-template-columns: 1fr; }
-    .order-aside  { order: -1; }
+    .order-aside  { order: -1; position: static; }
 }
 
 /* Formulario */
