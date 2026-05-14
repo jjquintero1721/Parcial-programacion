@@ -32,12 +32,18 @@
     <!-- ===== SECCIÓN 1: HERO / LANDING ===== -->
     <section id="inicio" class="hero-section" aria-labelledby="hero-heading">
         <div class="hero-content">
+            <span class="hero-eyebrow">☕ Café de Especialidad</span>
             <h1 id="hero-heading">El mejor café de especialidad, directo a tu taza</h1>
             <p class="hero-description">
                 Seleccionamos granos de las mejores fincas colombianas y los equipos perfectos
                 para que vivas una experiencia de café única en casa.
             </p>
             <a href="#productos" class="btn btn-primary">Explorar productos</a>
+            <div class="hero-badges">
+                <span class="hero-badge">🇨🇴 100% Colombia</span>
+                <span class="hero-badge">✓ Tostado artesanal</span>
+                <span class="hero-badge">⚡ Envío en 48h</span>
+            </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
@@ -54,11 +60,18 @@
                 <div class="cup-saucer"></div>
             </div>
         </div>
+
+        <!-- Wave: transición visual de hero → productos -->
+        <div class="hero-wave" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 90" preserveAspectRatio="none">
+                <path fill="#FDFAF5" d="M0,45 C360,90 720,10 1080,55 C1260,75 1380,30 1440,50 L1440,90 L0,90 Z"/>
+            </svg>
+        </div>
     </section>
 
     <!-- ===== SECCIÓN 2: CATÁLOGO DE PRODUCTOS ===== -->
     <section id="productos" class="products-section" aria-labelledby="products-heading">
-        <div class="section-header">
+        <div class="section-header reveal">
             <h2 id="products-heading">Nuestros Productos</h2>
             <p class="section-subtitle">Todo lo que necesitas para el café perfecto</p>
         </div>
@@ -90,7 +103,7 @@
 
     <!-- ===== SECCIÓN 3: FORMULARIO DE PEDIDO ===== -->
     <section id="pedido" class="order-section" aria-labelledby="order-heading">
-        <div class="section-header">
+        <div class="section-header reveal">
             <h2 id="order-heading">Realizar Pedido</h2>
             <p class="section-subtitle">Completa el formulario y recibe tu pedido en casa</p>
         </div>
@@ -221,7 +234,7 @@
             </form>
 
             <!-- Beneficios -->
-            <aside class="order-aside" aria-label="Por qué elegirnos">
+            <aside class="order-aside reveal" aria-label="Por qué elegirnos">
                 <h3>¿Por qué elegirnos?</h3>
                 <ul class="benefits-list">
                     <li class="benefit-item">
